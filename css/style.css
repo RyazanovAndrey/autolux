@@ -23,6 +23,10 @@ body {
     padding: 20px 0;
 }
 
+.header__file {
+    color: #000;
+}
+
 .header__row {
     display: flex;
     justify-content: space-between;
@@ -168,7 +172,7 @@ body {
 }
 
 .btn-content {
-    display: block;
+    display: inline-block;
     padding: 20px 35px;
     background: var(--color1);
     font-size: 16px;
@@ -214,14 +218,11 @@ body {
 
 .why__row {
     display: flex;
-    margin: 0 -15px;
-
+    gap: 30px;
 }
 
 .why__col {
     flex: 0 1 33.33%;
-    padding: 0 15px;
-
 }
 
 .card {
@@ -255,25 +256,74 @@ body {
 .services {
     padding: 50px 0;
 }
-.services__title {
-}
-.title {
-}
+
 .services__tab-wrapper {
     margin-top: 70px;
 }
+
 .tabs {
+    display: flex;
+    gap: 25px;
 }
+
 .tabs__item {
-    background: #dbdbdb;
+    background: var(--color4);
     width: 220px;
     display: flex;
     align-items: center;
     padding: 10px 15px;
     border-radius: 5px;
-   
-}
-.tabs__content{
-    margin-left: 20px;
+    cursor: pointer;
 
+}
+
+.active__tab {
+    background: var(--color3);
+    color: #ffffff;
+}
+
+.tabs__content-row {
+    display: flex;
+    gap: 80px;
+    margin-top: 70px;
+}
+
+.tabs__content-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.tabs__content-name {
+    margin-bottom: 30px;
+}
+
+.tabs__content-item {
+    background: url(../img/circle.png) center left no-repeat;
+    list-style-position: inside;
+    line-height: 230%;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.tabs__content-price {
+    line-height: 230%;
+    font-weight: 700;
+}
+
+.tabs__content-img {
+    border-radius: 10px;
+}
+
+.tabs__content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.tabs__img {
+    margin-right: 20px;
 }

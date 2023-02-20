@@ -19,7 +19,8 @@
         <div class="container">
             <div class="header__row">
                 <div class="header__logo"><img src="img/Logo.png" alt=""></div>
-                <div class="header__down-list"><a href="#" class="header__file">Завантажити прайс-лист</a> </div>
+                <div class="header__down-list"><a href="price/price.xlsx" class="header__file">Завантажити
+                        прайс-лист</a> </div>
                 <div class="header__nav">
                     <ul class="header__menu">
                         <li class="header__list"><button class="btn">Меню</button>
@@ -91,7 +92,7 @@
 
         <section class="why">
             <div class="container">
-                <div class="why__title title">Чому обирають нас?</div>
+                <h3 class="why__title title">Чому обирають нас?</h3>
                 <div class="why__row">
 
                     <div class="why__col">
@@ -138,14 +139,81 @@
 
         <section class="services">
             <div class="container">
-                <div class="services__title title">Наші послуги</div>
+                <h3 class="services__title title">Наші послуги</h3>
+
                 <div class="services__tab-wrapper">
                     <ul class="tabs">
-                        <li class="tabs__item" data-tab="tab1"><img src="img/01.svg" alt=""><p class="tabs__content">Ремонт ноутбуків</p></a></li>
+                        <li class="tabs__item active__tab " data-tab="tab1"><img class="tabs__img" src="img/01.svg" alt="">
+                            <p>Ремонт ноутбуків</p>
+                        </li>
+                        <li class="tabs__item" data-tab="tab2"><img class="tabs__img" src="img/02.svg" alt="">
+                            <p>Ремонт комп'ютерів</p>
+                        </li>
+                        <li class="tabs__item" data-tab="tab3"><img class="tabs__img" src="img/03.svg" alt="">
+                            <p>Ремонт моніторів</p>
+                        </li>
+                        <li class="tabs__item" data-tab="tab4"><img class="tabs__img" src="img/04.svg" alt="">
+                            <p>Планшетів моб. телефонів</p>
+                        </li>
+                        <li class="tabs__item" data-tab="tab5"><img class="tabs__img" src="img/05.svg" alt="">
+                            <p>Принтери БФП</p>
+                        </li>
                     </ul>
+                </div>
+
+                <div class="tabs__content" id="tab1">
+                    <div class="tabs__content-row">
+
+                        <div class="tabs__content-col">
+                            <img class="tabs__content-img" src="img/pic_tab1.jpg" alt="">
+                        </div>
+
+                        <div class="tabs__content-col">
+                            <div class="tabs__content-title">Ремонт ноутбуків</div>
+
+                            <div class="tabs__content-wrapper">
+
+                                <div class="tabs__content-section">
+                                    <ul class="tabs__content-name">
+                                        <li class="tabs__content-item">Діагностика без подальшого ремонту</li>
+                                        <li class="tabs__content-item">Заміна клавіатури</li>
+                                        <li class="tabs__content-item">Прошивка BIOS</li>
+                                        <li class="tabs__content-item">Заміна LED матриці</li>
+                                        <li class="tabs__content-item">Заміна шлейфу матриці</li>
+                                        <li class="tabs__content-item">Ремонт частин корпусу</li>
+                                        <li class="tabs__content-item">Заміна кулера</li>
+                                    </ul>
+                                    <button class="btn-content">Завантажити повний прайс</button>
+                                </div>
+
+                                <div class="tabs__content-section">
+                                    <ul class="tabs__content-list">
+                                        <li class="tabs__content-price">від 150 грн</li>
+                                        <li class="tabs__content-price">50 грн - 250 грн</li>
+                                        <li class="tabs__content-price">300 грн - 500 грн</li>
+                                        <li class="tabs__content-price">300 грн + запчастина</li>
+                                        <li class="tabs__content-price">250 грн - 450 грн + запчастина</li>
+                                        <li class="tabs__content-price">від 250 грн - 500 грн</li>
+                                        <li class="tabs__content-price">від 100 грн + запчастина</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs__content hidden" id="tab2">
+                    <h1>Hallow</h1>
+                </div>
+
+                <div class="tabs__content hidden" id="tab3">
+                    <h1>Andrey</h1>
                 </div>
             </div>
         </section>
+
+        
     </main>
 
 
