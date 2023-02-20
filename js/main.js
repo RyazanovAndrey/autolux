@@ -6,4 +6,5 @@ btn.addEventListener("click", function(event){
     let drop = currentBtn.closest(".header__list").querySelector(".drop");
 
     drop.classList.toggle("drop__active");
+    btn.classList.toggle("btn__active");
 })
