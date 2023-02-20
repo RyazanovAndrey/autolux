@@ -1,15 +1,15 @@
-:root{
+:root {
     --color1: #FEC93B;
     --color2: #CBCBCB;
     --color3: #2EB747;
     --color4: #F6F6F6;
 }
 
-body{
+body {
     font-family: "Roboto";
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -21,20 +21,78 @@ body{
     background: var(--color4);
     padding: 20px 0;
 }
+
 .header__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__down-list {
+    background: url(../img/downprice.svg) center left no-repeat;
+    padding: 5px 0 5px 30px;
+
 }
-.header__nav {
+
+.header__file {
+    border-bottom: 2px dotted #000;
 }
+
+.header__nav {}
+
 .header__menu {
-    display: flex;
+    position: relative;
+    z-index: 20;
 }
+
 .header__list {
+    position: relative;
 }
+
+.drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background: var(--color3);
+    border-radius: 10px;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.drop__active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop__list {
+
+}
+
+.drop__link {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    color: var(--color4);
+    align-items: center;
+}
+.drop__link:hover{
+   background: #000;
+}
+
+.drop__list:first-child .drop__link:hover{
+    border-radius: 10px 10px 0 0;
+}
+
+.drop__list:last-child .drop__link:hover{
+    border-radius: 0 0 10px 10px;
+}
+
+.drop__img{
+    margin-right: 10px;
+}
+
 .btn {
     position: relative;
     border: 1px solid var(--color3);
@@ -47,7 +105,7 @@ body{
     width: 120px;
 }
 
-.btn::after{
+.btn::after {
     position: absolute;
     top: 47%;
     right: 18px;
@@ -59,18 +117,14 @@ body{
     padding: 3px;
 }
 
-.drop {
-    display: none;
-}
-.drop__list {
-}
-.drop__link {
-}
+
 .contact-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
-.contact-info__ico {
-}
+
 .contact-info__tel {
-}
-.contact-info__text {
+    font-size: 20px;
+    font-weight: 900;
 }
