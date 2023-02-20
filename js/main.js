@@ -8,3 +8,4 @@ btn.addEventListener("click", function(event){
     drop.classList.toggle("drop__active");
     btn.classList.toggle("btn__active");
 })
+

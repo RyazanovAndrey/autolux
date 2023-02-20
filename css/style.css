@@ -249,3 +249,31 @@ body {
     font-weight: 500;
     color: var(--color2);
 }
+
+/* ----services---- */
+
+.services {
+    padding: 50px 0;
+}
+.services__title {
+}
+.title {
+}
+.services__tab-wrapper {
+    margin-top: 70px;
+}
+.tabs {
+}
+.tabs__item {
+    background: #dbdbdb;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+   
+}
+.tabs__content{
+    margin-left: 20px;
+
+}
