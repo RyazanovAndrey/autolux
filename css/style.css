@@ -1,3 +1,76 @@
-.item{
-    color: red;
+:root{
+    --color1: #FEC93B;
+    --color2: #CBCBCB;
+    --color3: #2EB747;
+    --color4: #F6F6F6;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ----Header---- */
+
+.header {
+    background: var(--color4);
+    padding: 20px 0;
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__down-list {
+}
+.header__nav {
+}
+.header__menu {
+    display: flex;
+}
+.header__list {
+}
+.btn {
+    position: relative;
+    border: 1px solid var(--color3);
+    display: block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--color3);
+    font-size: 18px;
+    width: 120px;
+}
+
+.btn::after{
+    position: absolute;
+    top: 47%;
+    right: 18px;
+    transform: translateY(-50%) rotate(45deg);
+    content: "";
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+}
+
+.drop {
+    display: none;
+}
+.drop__list {
+}
+.drop__link {
+}
+.contact-info {
+}
+.contact-info__ico {
+}
+.contact-info__tel {
+}
+.contact-info__text {
 }
