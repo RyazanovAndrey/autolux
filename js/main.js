@@ -1,4 +1,7 @@
+// menu
+
 const btn = document.querySelector(".btn");
+const activeMenu = document.querySelector(".drop");
 
 btn.addEventListener("click", function(event){
 
@@ -7,6 +10,14 @@ btn.addEventListener("click", function(event){
 
     drop.classList.toggle("drop__active");
     btn.classList.toggle("btn__active");
+})
+
+document.addEventListener("click", function(e){
+
+    if (!e.target.closest(".header__menu")) {
+        btn.classList.remove("btn__active");
+        activeMenu.classList.remove("drop__active");
+    }
 })
 
 // tabs
@@ -26,3 +37,25 @@ tab.forEach(item => {
         opnTab.classList.remove("hidden");
     })
 })
+
+// swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
+
