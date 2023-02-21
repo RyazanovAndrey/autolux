@@ -523,3 +523,41 @@ body {
     font-weight: 500;
     color: var(--color2);
 }
+
+/* ----swiper---- */
+
+.slider{
+   
+}
+
+.reviews__title-row{
+    position: relative;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: unset;
+    right: 100px;
+}
+
+.swiper-button-prev::after{
+    content: url(../img/arrow-slider.svg);
+    width: 60px;
+    height: 60px;
+}
+.swiper-button-next::after{
+    content: url(../img/arrow-slider.svg);
+    transform: rotate(180deg);
+    width: 60px;
+    height: 60px;
+
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    
+}
+.swiper-pagination{
+
+}
+.swiper-pagination-bullet{
+
+}
+
