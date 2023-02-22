@@ -249,7 +249,6 @@ body {
 .bullets {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 30px;
     margin-top: 125px;
 }
@@ -686,6 +685,13 @@ body {
     }
     .rates__col:last-child{
         flex: 0 1 100%;
+    }
+    .bullets{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .home__wrapper{
+        padding-top: 95px;
     }
 
 }
