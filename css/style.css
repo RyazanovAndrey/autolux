@@ -54,6 +54,7 @@ body {
 
 .drop {
     position: absolute;
+    padding: 10px 10px;
     top: 100%;
     left: 0;
     width: 180px;
@@ -72,24 +73,18 @@ body {
 }
 
 .drop__link {
+    position: relative;
     display: flex;
     padding: 10px 0 10px 10px;
     color: var(--color4);
     align-items: center;
     font-weight: 700;
-
+    transition: all 0.3s;
 }
 
 .drop__link:hover {
-    background: #000;
-}
-
-.drop__list:first-child .drop__link:hover {
-    border-radius: 10px 10px 0 0;
-}
-
-.drop__list:last-child .drop__link:hover {
-    border-radius: 0 0 10px 10px;
+    background: #008515;
+    border-radius: 8px;
 }
 
 .drop__img {
@@ -510,6 +505,7 @@ body {
 
 .reviews__row__img {
     border-radius: 100px;
+    width: 50px;
 }
 
 .reviews_name {
@@ -526,38 +522,54 @@ body {
 
 /* ----swiper---- */
 
-.slider{
-   
-}
-
-.reviews__title-row{
+.slider {
     position: relative;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: unset;
-    right: 100px;
-}
-
-.swiper-button-prev::after{
+.swiper-button-prev::after {
     content: url(../img/arrow-slider.svg);
     width: 60px;
     height: 60px;
 }
-.swiper-button-next::after{
+
+.swiper-button-next::after {
     content: url(../img/arrow-slider.svg);
     transform: rotate(180deg);
     width: 60px;
     height: 60px;
 
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
-    
-}
-.swiper-pagination{
 
-}
-.swiper-pagination-bullet{
-
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -55px;
 }
 
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: -55px;
+}
+
+.swiper-pagination {}
+
+.swiper-pagination-bullet {}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -45px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background: var(--color3);
+}
+
+/* ----info---- */
+
+.info{
+    min-height: 500px;
+    position: relative;
+}
+.info__map{
+    opacity: 0.5;
+}

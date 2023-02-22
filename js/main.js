@@ -3,7 +3,7 @@
 const btn = document.querySelector(".btn");
 const activeMenu = document.querySelector(".drop");
 
-btn.addEventListener("click", function(event){
+btn.addEventListener("click", function (event) {
 
     let currentBtn = event.target;
     let drop = currentBtn.closest(".header__list").querySelector(".drop");
@@ -12,7 +12,7 @@ btn.addEventListener("click", function(event){
     btn.classList.toggle("btn__active");
 })
 
-document.addEventListener("click", function(e){
+document.addEventListener("click", function (e) {
 
     if (!e.target.closest(".header__menu")) {
         btn.classList.remove("btn__active");
@@ -26,11 +26,11 @@ const tab = document.querySelectorAll(".tabs__item");
 const tabContent = document.querySelectorAll(".tabs__content");
 
 tab.forEach(item => {
-    item.addEventListener("click", ()=> {
+    item.addEventListener("click", () => {
 
         tab.forEach(el => el.classList.remove("active__tab"));
         tabContent.forEach(cl => cl.classList.add("hidden"));
-        
+
         item.classList.add("active__tab");
 
         const opnTab = document.querySelector("#" + item.dataset.tab);
@@ -45,17 +45,23 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 20,
-  
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
     },
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  
-  });
+
+});
 
