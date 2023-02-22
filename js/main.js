@@ -10,6 +10,8 @@ btn.addEventListener("click", function (event) {
 
     drop.classList.toggle("drop__active");
     btn.classList.toggle("btn__active");
+
+    btn.classList.toggle("arrow__rotate");
 })
 
 document.addEventListener("click", function (e) {
@@ -17,6 +19,7 @@ document.addEventListener("click", function (e) {
     if (!e.target.closest(".header__menu")) {
         btn.classList.remove("btn__active");
         activeMenu.classList.remove("drop__active");
+        btn.classList.remove("arrow__rotate");
     }
 })
 
